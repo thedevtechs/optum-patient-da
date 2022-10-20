@@ -14,12 +14,8 @@ export default function SearchComponent() {
 
     const onSearch = () => {
         if (searchText.length > 0) {
-            try {
-                router.push(`/search?s=${searchText}`);
-                searchTextInputElement.current.value = "";
-            } catch (error) {
-                console.log(error);
-            }
+            router.push(`/search?s=${searchText}`);
+            searchTextInputElement.current.value = "";
         }
     };
 
@@ -38,9 +34,7 @@ export default function SearchComponent() {
             })}
             rightSectionWidth={40}
             rightSection={
-                <Link href={'/'}>
-                    <Image alt={"search-img"} src={search} height={20} width={20} style={{}} onClick={() => onSearch()} />
-                </Link>
+                <Image alt={"search-img"} src={search} height={20} width={20} style={{}} onClick={() => onSearch()} />
             }
             onChange={(ev) => setSearchText(ev.target.value)}
             onKeyUp={(ev) => {

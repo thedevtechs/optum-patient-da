@@ -1,0 +1,30 @@
+.gallery-row {
+  width: 80%;
+  margin: auto;
+}
+
+.provider-gallery-page {
+  .gallery-row h4 {
+    font-size: 20px !important;
+  }
+
+}
+
+.provider-gallery-component {
+  .card-body {
+    height: 120px;
+  }
+  .card-img-top {
+    height: 360px;
+  }
+  .card-title {
+    font-size: 19px !important;
+    margin-bottom: 10px;
+  }
+}
+.locations-detail-card-container {
+  border: 1px solid #b7b7b7;
+  width: 100%; padding: 20px 20px 10px;
+  border-radius: 6px;
+  box-shadow: 0 4px 0 rgb(0 0 0 / 15%);
+}

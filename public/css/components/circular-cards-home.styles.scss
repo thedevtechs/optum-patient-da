@@ -1,0 +1,24 @@
+.homepage-gallery-container {
+  @media only screen and (max-width: 550px) {
+    width: 90%;
+    padding: 0px 5px;
+  }
+  @media only screen and (min-width: 1000px) {
+    height: 200px !important;
+  }
+}
+
+.home-card {
+  border: none;
+
+
+}
+
+.homepage-gallery-item-image {
+  width: 75%;
+}
+
+.circular-title {
+  height: 60px;
+  margin: auto;
+}

@@ -1,0 +1,26 @@
+.text-section-component-container {
+
+  .border {
+    border: #B7B7B7 1px solid;;
+  }
+
+  @media (max-width: 768px) {
+    padding: 0  30px;
+
+  }
+
+  @media only screen and (max-width: 550px) {
+    width: 90%;
+    margin: auto;
+    padding: 0px 5px;
+    margin-top: -45px;
+  }
+}
+
+.gray {
+  background-color: #d0d0ce;
+  max-width: 100%;
+  padding: 60px 30px;
+}
+
+

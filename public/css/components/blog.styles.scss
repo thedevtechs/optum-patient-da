@@ -1,0 +1,15 @@
+.blog-card {
+  border-radius: 6px;
+  margin-bottom: 100px;
+  width: 80%;
+  :hover {
+    cursor: pointer;
+  }
+  p {
+    font-size: 18px !important;
+  }
+}
+
+.blog-category-title {
+  text-transform: uppercase;
+}

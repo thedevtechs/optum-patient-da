@@ -1,0 +1,19 @@
+.marquee-container {
+  :hover {
+    cursor: pointer;
+  }
+  p {
+    font-size: 16px !important;
+  }
+  .marquee-image {
+    height: 100% !important;
+    object-fit: cover;
+  }
+}
+
+.blog-divider {
+  border-top: 1px solid #434448;
+  width: 240px;
+  margin-bottom: 15px;
+  margin-top: 10px;
+}

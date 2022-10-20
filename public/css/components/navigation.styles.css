@@ -1,0 +1,236 @@
+/* SMA */
+.navbar-brand {
+  padding-top: 0px;
+}
+
+.navbar-expand-lg {
+  height: 45px;
+}
+
+.logo-divider {
+  margin-right: 10px;
+}
+
+#alt-logo img {
+  height: 40px;
+}
+
+/* End of SMA */
+.navbar-brand img {
+  height: 60px;
+}
+
+.right-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  width: 70%;
+}
+@media (max-width: 768px) {
+  .right-info {
+    align-items: center;
+  }
+}
+
+button {
+  border: 1px solid transparent;
+  background-color: transparent;
+}
+
+.top-nav-line {
+  border-bottom: 1px solid #595959;
+  outline: 0;
+  position: relative;
+  border-bottom: 1px solid #595959 !important;
+  padding-left: 10px;
+}
+
+/* Navbar css */
+.should-show {
+  display: block;
+}
+
+.navbar-brand img {
+  height: 60px;
+}
+
+button {
+  border: 1px solid transparent;
+  background-color: transparent;
+}
+
+.navbar-expand-lg {
+  height: auto !important;
+  margin: 0px;
+  margin-top: -20px;
+}
+
+.top-nav-line {
+  border-bottom: 1px solid #595959;
+  outline: 0;
+  position: relative;
+  border-bottom: 1px solid #595959 !important;
+  padding-left: 10px;
+}
+
+.top-nav {
+  z-index: 5000;
+  padding-top: 5px;
+  max-width: 1350px;
+  height: 80px;
+}
+.top-nav p {
+  margin-bottom: -5px;
+}
+
+.main-nav {
+  max-width: 1350px;
+  margin: auto;
+}
+
+/* Optum Megu Nav - AC */
+.optum-menu-nav .navbar-nav {
+  display: flex;
+  font-family: "Frutiger-Light", Arial, sans-serif !important;
+  color: #282a2e !important;
+  font-size: 16px;
+  font-weight: normal !important;
+  width: 100%;
+}
+@media (max-width: 768px) {
+  .optum-menu-nav .navbar-nav .nav-item {
+    padding: 10px 0;
+  }
+}
+.optum-menu-nav .navbar-nav .nav-item .nav-link {
+  padding: 0px 20px !important;
+  text-align: center;
+  font-weight: normal !important;
+  color: #282a2e !important;
+  font-family: "Frutiger-Light", Arial, sans-serif !important;
+  cursor: pointer;
+  font-size: 16px !important;
+  letter-spacing: 1px;
+  width: 100% !important;
+}
+@media (max-width: 768px) {
+  .optum-menu-nav .navbar-nav .nav-item .nav-link {
+    padding: 5px 0 !important;
+  }
+}
+.optum-menu-nav .navbar-nav .nav-item .nav-link a {
+  padding: 0;
+}
+.optum-menu-nav .navbar-nav .nav-item .nav-link:hover {
+  background: linear-gradient(to bottom, #fff 0, #f3f3f3 50%, #ededed 51%, #fff 100%);
+  background-image: linear-gradient(white 0px, #f3f3f3 50%, #ededed 51%, white 100%);
+}
+.optum-menu-nav .navbar-nav .nav-item .nav-link:hover a.nav-link {
+  border-bottom: 1px solid var(--primary-branding-color);
+}
+.optum-menu-nav .navbar-nav .nav-item.dropdown.show {
+  background: linear-gradient(to bottom, #fff 0, #f3f3f3 50%, #ededed 51%, #fff 100%);
+  background-image: linear-gradient(white 0px, #f3f3f3 50%, #ededed 51%, white 100%);
+}
+.optum-menu-nav .navbar-nav .nav-item.dropdown.show a.dropdown-toggle {
+  border-bottom: 1px solid var(--primary-branding-color);
+}
+.optum-menu-nav .navbar-nav a.dropdown-toggle {
+  border-bottom: 1px solid transparent;
+  /* <- here */
+  transition: border-bottom 0.5s;
+  text-decoration: none;
+  /* I added this for clarity of effect */
+}
+.optum-menu-nav .navbar-nav .dropdown-toggle::after {
+  display: inline-block;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  border-top: 0;
+  border-right: 0;
+  border-bottom: 0;
+  border-left: 0;
+  vertical-align: -4px;
+  color: #272B2E;
+  width: 12px;
+  height: 12px;
+  margin-right: 5px;
+  content: "";
+  background: url("../../images/standard/dropdown.svg") no-repeat 0 0;
+  background-size: 100%;
+  color: #3E6CB8;
+}
+.optum-menu-nav .navbar-nav .dropdown-menu {
+  padding: 16px 16px 36px 16px;
+  border-radius: 0 !important;
+  border-top: 1px solid #FFF;
+  width: 400px;
+  margin-top: -0.1px;
+  filter: drop-shadow(0px 5px 20px rgba(183, 183, 183, 0.3));
+}
+@media (max-width: 768px) {
+  .optum-menu-nav .navbar-nav .dropdown-menu {
+    filter: none;
+    width: 100% !important;
+  }
+}
+.optum-menu-nav .navbar-nav .dropdown-menu .dropdown-item {
+  display: block;
+  padding: 14px 0;
+  clear: both;
+  font-weight: 400;
+  color: #212529;
+  text-align: left;
+  white-space: normal;
+  background-color: transparent;
+  border-bottom: 1px solid #FFF;
+}
+.optum-menu-nav .navbar-nav .dropdown-menu .dropdown-item:hover {
+  border-bottom: 1px solid var(--primary-branding-color);
+}
+.optum-menu-nav .navbar-nav .dropdown-menu a:hover {
+  color: #000000 !important;
+  text-decoration: none;
+}
+.optum-menu-nav .navbar-nav .dropdown-menu h6 {
+  font-family: "Open Sans", sans-serif !important;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 19.7px;
+  color: #000;
+  margin-bottom: 0 !important;
+  letter-spacing: 1px;
+}
+.optum-menu-nav .navbar-nav .dropdown-menu p {
+  display: block;
+  font-family: "Open Sans", sans-serif !important;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16.34px;
+  color: #595959;
+  padding-top: 6px;
+}
+
+.navbar-collapse {
+  margin-top: 20px;
+}
+
+/* Menu On-Click Body Overlay */
+.body-overlay:after {
+  content: "";
+  display: block;
+  position: absolute;
+  /* could also be absolute */
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 10;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+/*# sourceMappingURL=navigation.styles.css.map */

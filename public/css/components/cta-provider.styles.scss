@@ -1,0 +1,17 @@
+.cta-provider-component {
+    .cta-providers-list {
+        padding-left: 0px;
+
+        li{
+            padding-bottom: 15px;
+            list-style-type: none;
+            text-decoration: underline;
+        }
+        a {
+            font-weight: bold !important;
+        }
+    }
+    .row {
+        margin: 0px !important;
+    }
+}

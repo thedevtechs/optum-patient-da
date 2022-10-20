@@ -1,0 +1,70 @@
+/*================================================
+Go To Top CSS
+=================================================*/
+.back-to-top p {
+  position: absolute;
+  top: 10px;
+  left: 8.5px;
+}
+.back-to-top .top {
+  position: fixed;
+  cursor: pointer;
+  bottom: 15px;
+  right: 14px;
+  color: #fff;
+  background-color: #000;
+  z-index: 4;
+  width: 40px;
+  text-align: center;
+  height: 40px;
+  line-height: 40px;
+  transition: 0.9s;
+  border-radius: 50%;
+}
+.back-to-top .top i {
+  position: absolute;
+  top: 30%;
+  transform: translateY(-50%);
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  transition: 0.5s;
+}
+.back-to-top .top i:last-child {
+  opacity: 0;
+  visibility: hidden;
+  top: 60%;
+}
+.back-to-top .top::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background: #000;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.5s;
+  border-radius: 50%;
+}
+.back-to-top .top:hover, .back-to-top .top:focus {
+  color: #fff;
+}
+.back-to-top .top:hover::before, .back-to-top .top:focus::before {
+  opacity: 1;
+  visibility: visible;
+}
+.back-to-top .top:hover i:first-child, .back-to-top .top:focus i:first-child {
+  opacity: 0;
+  top: 0;
+  visibility: hidden;
+}
+.back-to-top .top:hover i:last-child, .back-to-top .top:focus i:last-child {
+  opacity: 1;
+  visibility: visible;
+  top: 50%;
+}
+
+/*# sourceMappingURL=go-to-top.styles.css.map */

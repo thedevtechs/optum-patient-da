@@ -1,0 +1,268 @@
+$color-1: #EFEFEE; //light grey
+//$primary-branding-color:rgb(206, 75, 39);
+$primary-branding-color: #316bbe;
+
+/* SMA */
+.navbar-brand {
+  padding-top: 0px;
+}
+
+.navbar-expand-lg {
+  height: 45px;
+}
+
+.logo-divider {
+  margin-right: 10px;
+}
+
+#alt-logo img {
+  height: 40px;
+}
+
+/* End of SMA */
+
+.navbar-brand img {
+  height: 38px;
+  width: 220px;
+}
+
+.right-info{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  width:70%;
+    @media (max-width: 768px) {
+      align-items: center;
+    }
+}
+
+button {
+  border: 1px solid transparent;
+  background-color: transparent;
+}
+
+.top-nav-line {
+  border-bottom: 1px solid #595959;
+  background-color: rgb(68, 68, 68);
+  outline: 0;
+  position: relative;
+  border-bottom: 1px solid #595959 !important;
+  padding-left: 10px;
+}
+/* Navbar css */
+
+.should-show {
+  display: block;
+}
+
+button {
+  border: 1px solid transparent;
+  background-color: transparent;
+}
+
+.navbar-expand-lg {
+  height: auto!important;
+  margin:0px;
+  margin-top: -20px;
+}
+
+
+.top-nav-line {
+  border-bottom: 1px solid #595959;
+  outline: 0;
+  position: relative;
+  border-bottom: 1px solid #595959 !important;
+  padding-left: 10px;
+}
+
+.top-nav {
+  z-index: 5000;
+  padding-top: 5px;
+  max-width: 1350px;
+  height: 80px;
+  margin-bottom: 60px;
+
+  p {
+    margin-bottom: -5px;
+  }
+}
+
+.main-nav {
+  max-width: 1350px;
+  margin: auto;
+}
+
+
+/* Optum Megu Nav - AC */
+.optum-menu-nav {
+  .navbar-nav {
+    display: flex;
+    font-family: "Frutiger-Light", Arial, sans-serif !important;
+    color: #282a2e !important;
+    font-size: 16px;
+    font-weight: normal !important;
+    width:100%;
+
+    .nav-item{
+      @media (max-width: 768px) {
+        padding:10px 0;
+      }
+    }
+
+    .nav-item .nav-link{
+      padding: 0px 20px !important;
+      text-align: center;
+      font-weight: bold !important;
+      color: #fff !important;
+      font-family: "Frutiger-Light", Arial, sans-serif !important;
+      cursor: pointer;
+      font-size: 16px!important;
+      letter-spacing: 1px;
+      width: 100%!important;
+
+      @media (max-width: 768px) {
+        padding:5px 0!important;
+      }
+
+      a {
+        padding: 0;
+      }
+
+      &:hover {
+        //background: linear-gradient(to bottom, #fff 0, #f3f3f3 50%, #ededed 51%, #fff 100%);
+        //background-image: linear-gradient(rgb(255, 255, 255) 0px, rgb(243, 243, 243) 50%, rgb(237, 237, 237) 51%, rgb(255, 255, 255) 100%);
+
+        a.nav-link {
+          border-bottom: 1px solid var(--primary-branding-color);
+        }
+      }
+    }
+
+    .nav-item.dropdown.show {
+      //background: linear-gradient(to bottom, #fff 0, #f3f3f3 50%, #ededed 51%, #fff 100%);
+      //background-image: linear-gradient(rgb(255, 255, 255) 0px, rgb(243, 243, 243) 50%, rgb(237, 237, 237) 51%, rgb(255, 255, 255) 100%);
+
+      a.dropdown-toggle {
+        border-bottom: 1px solid var(--primary-branding-color);
+      }
+    }
+
+    a.dropdown-toggle {
+      border-bottom: 1px solid transparent; /* <- here */
+      transition: border-bottom 0.5s;
+      text-decoration: none; /* I added this for clarity of effect */
+      //padding: 0 !important;
+    }
+
+    //.dropdown-toggle::after {
+    //  display: inline-block;
+    //  font-size: inherit;
+    //  text-rendering: auto;
+    //  -webkit-font-smoothing: antialiased;
+    //  -moz-osx-font-smoothing: grayscale;
+    //  border-top: 0;
+    //  border-right: 0;
+    //  border-bottom: 0;
+    //  border-left: 0;
+    //  vertical-align: -4px;
+    //  color: #272B2E;
+    //  width: 12px;
+    //  height: 12px;
+    //  margin-right: 5px;
+    //  content: "";
+    //  background-size: 100%;
+    //  color: #3E6CB8;
+    //}
+
+
+    .dropdown-menu {
+      padding: 0px 16px 12px 16px;
+      border-radius: 0 !important;
+      border-top: 1px solid #FFF;
+      width: 250px;
+      margin-top: -0.1px;
+      filter: drop-shadow(0px 5px 20px rgba(183, 183, 183, 0.3));
+
+      @media (max-width: 768px) {
+        filter: none;
+        width:100% !important;
+
+      }
+
+      .dropdown-item {
+        display: block;
+        padding: 14px 0px 0px 0px;
+        clear: both;
+        font-weight: 400;
+        color: #316bbe !important;
+        text-align: left;
+        white-space: normal;
+        background-color: transparent;
+        font-size: 14px;
+
+        &:hover {
+          text-decoration: underline;
+          color: #23527c !important;
+        }
+      }
+
+      a {
+        &:hover {
+          color: #000000 !important;
+          text-decoration: none;
+        }
+      }
+
+      h6 {
+        font-family: 'Open Sans', sans-serif !important;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 19.7px;
+        color: #000;
+        margin-bottom: 0 !important;
+        letter-spacing: 1px;
+      }
+
+      p {
+        display: block;
+        font-family: 'Open Sans', sans-serif !important;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 16.34px;
+        color: #595959;
+        padding-top: 6px;
+      }
+    }
+
+
+  }
+
+}
+
+.navbar-collapse {
+  margin-top: 20px;
+}
+
+/* Menu On-Click Body Overlay */
+.body-overlay:after {
+  content: "";
+  display: block;
+  position: absolute; /* could also be absolute */
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 10;
+  background-color: rgba(0, 0, 0, .5)
+}
+
+.dpl-nav__border {
+  display: block;
+  height: 4px;
+  width: 100%;
+  content: ' ';
+  background-image: linear-gradient(to right,#ffab00,#ffab00);
+}
+

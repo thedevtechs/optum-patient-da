@@ -1,0 +1,54 @@
+$main-color: #4A148C;
+
+
+.reverse-row {
+  flex-direction: row-reverse;
+}
+
+.interior-row {
+  width: 80%;
+  margin: auto;
+
+  .vertically-center {
+    display: flex;
+  }
+}
+
+.interior-row-container {
+  margin: auto;
+}
+
+section {
+  max-width: 80%;
+  margin: auto;
+
+
+  .right-column {
+    margin-top: 50px;
+  }
+
+  .left-column {
+    margin-top: 50px;
+  }
+
+    .left-column-content {
+      padding: 30px !important;
+    }
+
+
+  .right-column-content {
+    padding: 30px;
+  }
+
+  .img-fluid{
+    height: 100% !important;
+  }
+}
+
+.dash:after {
+  background-color:$main-color;
+}
+
+.interior-row img {
+  object-fit: cover;
+}

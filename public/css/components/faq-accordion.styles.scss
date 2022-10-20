@@ -1,0 +1,111 @@
+/* FAQ Accordion section */
+.accordion{
+  background-color: white!important;
+  padding:24px 0 24px 0!important;
+}
+
+.gradient-bar{
+  display: block;
+  height:5px;
+  background-image: url("/images/standard/gradient-bar.png");
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+  //padding: 0.5rem 0 0.5rem 0;
+  margin: 0 1rem;
+}
+
+.accordion-item {
+  margin:auto 12px;
+}
+.accordion-item-header {
+  padding: 0.5rem 0 0.5rem 0;
+  margin: 0 1rem;
+  min-height: 3.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  position: relative;
+  cursor: pointer;
+  font-family: "Frutiger-Light", sans-serif !important;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 25px;
+  color: #000000 !important;
+  border-bottom: 1px solid #000000;
+  button {
+    text-align: left;
+  }
+  &:active{
+    border-bottom: 1px solid  var(--primary-branding-color)!important;
+  }
+}
+
+.accordion-item-header-button.active{
+  color:var(--primary-branding-color)!important;
+}
+
+.accordion-item-header-button::after {
+  color: #B7B7B7;
+  font-family: 'Font Awesome\ 5 Free';
+  content: "\f078";
+  font-size: 12px;
+  position: relative;
+  left: 12.5px;
+  font-weight: 900;
+}
+.accordion-item-header-button.active::after {
+  font-family: 'FontAwesome';
+  content: "\f077";
+}
+
+.accordion-item-header{
+
+  button:hover,button:active,
+  button:visited,
+  button:focus {
+    color: var(--primary-branding-color) !important;
+    text-decoration: none !important;
+    outline: 0!important;
+  }
+
+}
+
+.accordion-item-body-content {
+  margin: 0 1rem;
+  padding: 16px 0 !important;
+  font-family: 'Open Sans', sans-serif !important;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 24px;
+  border-bottom: 1px solid var(--primary-branding-color);
+
+  ul{
+
+  }
+  li{
+    font-size: 15px!important;
+    padding-bottom: 0!important;
+  }
+}
+
+#accordion-close{
+  padding-bottom: 16px;
+  margin: 0 1rem;
+  color: #C25608;
+  border-bottom: 1px solid #C25608;
+  font-family: "Frutiger-Light", Arial, sans-serif !important;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 20px;
+  text-align: center;
+  letter-spacing: 0.08em;
+  cursor: pointer;
+}
+
+.accordion {
+  border: 1px solid #fff;
+}
